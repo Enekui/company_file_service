@@ -14,7 +14,6 @@ In order to release some of the infraestructure managemente, we will place every
 ### Diagram
 
 ![Diagram](infrastructure.jpg)
-Format: ![Alt Text](url)
 
 1. The Client sends a Play request to Backend running on AWS. That request is handled by AWS Load balancer (ELB)
 
