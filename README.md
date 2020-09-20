@@ -34,6 +34,16 @@ In order to release some of the infra administration, we will place everything i
 
 ### Estimated Cost
 
+Since we are hosting everything in the cloud, using AWS S3, we will use their price calculator to get an estimation of the pricing for this service.
+
+Users | Requests | File Size | 
+----- | -------- | --------- |
+
+
+
+(https://www.sumologic.com/insight/s3-cost-optimization/)
+
+
 
 
 # Problem
