@@ -42,12 +42,53 @@ Users         | Monthly Price     |
 1,000 000     | 210,575.60 USD    |
 1,000,000,000 | 21,012,963.20 USD |
 
-(https://www.sumologic.com/insight/s3-cost-optimization/)
+(https://calculator.aws/#/createCalculator)
 
 
 # Problem
 - How would you assure developer happiness for this service. Please send details about how local development environments are set, what are the rules for submitting code to
 production?
+
+*Note: First, I would like to clarify that I am not a developer, but I will tray to put on the table some of the things I have learned along the way in my career, hoping it can answer this question properly.*
+
+### Explaination
+To keep out developers happy, I would implement a development environment based on Vagrant.
+
+Vagrant generalizes virtual machine creation across multiple virtualization tools such as VirtualBox or VMware and even provides remote options for AWS, OpenStack or GCE. Vagrant configures and provisions virtual machines, based on configuration file called Vagrantfile. The syntax of this file is the Ruby programming language and as it is a simple text file we can easily commit it to our project VCS repository. 
+
+Vagrant can easily be learned and integrated with Visual Studio Code and Docker.
+
+(https://www.vagrantup.com)
+
+### Diagram
+
+![Vagrant](vagrant.png)
+
+1. The user creates a Vagrantfile, which is a declarative file (written in Ruby) that describes the type of machine needed, as well as how to configure and provision that machine. The user uses Vagrant to execute the Vagrantfile.
+
+2. Vagrant uses VirtualBox as a provider. It can also use other providers.
+
+3. The machine is up.
+
+4. Vagrant invokes a provisioner to configure the machine.
+
+5. The provisioner provisions the machine. It can be a simple shell script or Ansible, for example.
+
+6. One can access the deployed machine by ssh.
+
+### Rules
+
+1. Ensure the compile/build process is always done automatically 
+
+2. Build and Pack once
+
+3. All the deployments have to be done exactly in the same way
+
+4. Use feature flags in the application
+
+5. Always deploy using smaller batches
+
+6. The code has to be reviewed by a code checking tool, like Sonar for example
 
 # Solution
 *Note: I would need to have a bit of more input about the application hosting this service, in order to design the proper dev env so, let's say this is a containerized app and will setup an agile containers based development environment*
