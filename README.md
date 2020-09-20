@@ -7,7 +7,7 @@ This repository will contain an infrastructure diagram describing bottlenecks of
 # Solution
 *Note: Since I don't have clear information about the development of the application, I am assuming everything on my end. Also note that this is a general high-level overview on how this solution could be implemented, just for guidance.*
 
-For this approach, since I don't a long track doing architecture for an environment like this, I will use an approach similar to what Netflix does for their video streaming application. They are the best in this field and I think it's a good idea to learn from them.
+For this approach, since I don't have a long track doing architecture for an environment like this, I will use an approach similar to what Netflix does for their video streaming application. They are the best in this field and I think it's a good idea to learn from them.
 
 In order to release some of the infra administration, we will place everything in the cloud, being AWS the one we will use for this case but I think any major cloud provider will do.
 
