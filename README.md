@@ -51,6 +51,8 @@ production?
 
 *Note: First, I would like to clarify that I am not a developer, but I will tray to put on the table some of the things I have learned along the way in my career, hoping it can answer this question properly.*
 
+# Solution
+
 ### Explaination
 To keep out developers happy, I would implement a development environment based on Vagrant.
 
