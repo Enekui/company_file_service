@@ -36,14 +36,13 @@ In order to release some of the infra administration, we will place everything i
 
 Since we are hosting everything in the cloud, using AWS S3, we will use their price calculator to get an estimation of the pricing for this service.
 
-Users | Requests | File Size | 
------ | -------- | --------- |
-
-
+Users         | Monthly Price     |
+------------- | ------------------|
+1000          | 230 USD           |
+1,000 000     | 210,575.60 USD    |
+1,000,000,000 | 21,012,963.20 USD |
 
 (https://www.sumologic.com/insight/s3-cost-optimization/)
-
-
 
 
 # Problem
