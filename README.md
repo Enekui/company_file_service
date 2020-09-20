@@ -118,7 +118,7 @@ Vagrant can easily be learned and integrated with Visual Studio Code and Docker.
 
 ### Diagram CI/CD
 
-![CI/CD](ci_cd.jpg)
+![CI/CD](ci_cd.png)
 
 For this specific case, we could have a ci/cd architecture with two main repos, the one hosting the application code and the one hosting the infrastructure code. Since we always want to have all the infrastructure deployed as code with the configuration automated. 
 
