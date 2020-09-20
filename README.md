@@ -92,9 +92,48 @@ Vagrant can easily be learned and integrated with Visual Studio Code and Docker.
 
 6. The code has to be reviewed by a code checking tool, like Sonar for example
 
-# Solution
-*Note: I would need to have a bit of more input about the application hosting this service, in order to design the proper dev env so, let's say this is a containerized app and will setup an agile containers based development environment*
-
+# Problem
 - Which best practices should be applied while working with a team of 20 developers?
 
 - Describe how the CI/CD infrastructure should be for this kind of service.
+
+# Solution
+*Note: Since I have followed the Netflix approach to simulate the application, I will try to setup a CI/CD environment that can feet the needs of this application. *
+
+### Best practices
+
+1. Always try to review the code as a team
+
+2. Ensure the team is using the best possible tools, to ensure productivity and satisfaction
+
+3. Create a team standard to follow the same patter when coding
+
+4. Automate testing and deployments
+
+5. Get someone dedicated only to testing and review
+
+6. Try to use some kind of bug tracking system
+
+7. Rely on code check tools like Sonar
+
+### Diagram CI/CD
+
+![CI/CD](ci_cd.jpg)
+
+For this specific case, we could have a ci/cd architecture with two main repos, the one hosting the application code and the one hosting the infrastructure code. Since we always want to have all the infrastructure deployed as code with the configuration automated. 
+
+This can always be achieved with Terraform & Ansible.
+
+1. Developer pushes the code to Git
+
+2. Jenkins trigger the Docker image build
+
+3. If the build process is successful the image is deployed to the container
+
+*Note: This process will be repeated in four environments, dev/test stag/prod. 
+Also note that this is a very simple high-level model to have an idea, getting the best dev ci/cd env
+requires a deep analysis of a lot of factors.*
+
+
+
+
