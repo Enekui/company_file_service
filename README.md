@@ -5,11 +5,11 @@ This repository will contain an infrastructure diagram describing bottlenecks of
 - Provide an infrastructure diagram describing bottlenecks of the whole service with estimated costs for 1,000, 1,000,000, and 1,000,000,000 users with 10gb files -- %40 video -- and 1000 requests per user/day.
 
 # Solution
-*Note: Since I don't have clear information about the develpment of the application, I am assumming everything on my end. Also note that this is a general high level overview on how this solution could be implemented, just for guidance.*
+*Note: Since I don't have clear information about the development of the application, I am assuming everything on my end. Also note that this is a general high-level overview on how this solution could be implemented, just for guidance.*
 
 For this approach, since I don't a long track doing architecture for an environment like this, I will use an approach similar to what Netflix does for their video streaming application. They are the best in this field and I think it's a good idea to learn from them.
 
-In order to release some of the infraestructure managemente, we will place everything in the cloud, being AWS the one we will use for this case but I think any major cloud provider will do.
+In order to release some of the infra administration, we will place everything in the cloud, being AWS the one we will use for this case but I think any major cloud provider will do.
 
 ### Diagram
 
@@ -42,8 +42,6 @@ production?
 
 # Solution
 *Note: I would need to have a bit of more input about the application hosting this service, in order to design the proper dev env so, let's say this is a containerized app and will setup an agile containers based development environment*
-
-For this case, I would deploy a coulple of kubernetes clusters in order to host 
 
 - Which best practices should be applied while working with a team of 20 developers?
 
